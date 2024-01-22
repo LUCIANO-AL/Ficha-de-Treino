@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Treinos">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Controle_De_Medidas.NoActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/red_claro"
+            app:popupTheme="@style/Theme.Controle_De_Medidas.NoActionBar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/idTelaPrincipal"
+        layout="@layout/content_treinos"
+        android:visibility="visible"/>
+
+    <include
+        android:id="@+id/idAddNovoTreino"
+        layout="@layout/add_usuario_do_treino"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/idUpdateMusc"
+        layout="@layout/update_musculo"
+        android:visibility="gone"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

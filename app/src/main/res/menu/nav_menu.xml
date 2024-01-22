@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group
+         android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_treino"
+            android:title="Ficha de Treino"/>
+
+        <item
+            android:id="@+id/nav_list_treino"
+            android:title="Lista de Treinos"/>
+
+        <item
+            android:id="@+id/nav_add_medidas"
+            android:title="Adicionar Medidas"/>
+
+        <item
+            android:id="@+id/nav_lista_medidas"
+            android:title="Lista de Medidas Adicionadas"/>
+
+        <item
+            android:id="@+id/nav_comp_medidas"
+            android:title="Comparativo das Medidias"/>
+
+
+
+    </group>
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:title="Fecha"/>
+            <item
+                android:id="@+id/nav_download"
+                android:title="Compartilhe com os amigos"/>
+        </menu>
+
+    </item>
+
+</menu>

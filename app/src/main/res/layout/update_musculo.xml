@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="0sp"
+    android:layout_marginTop="0dp"
+    android:layout_marginRight="0sp"
+    android:orientation="vertical"
+    tools:context=".Treinos">
+
+    <LinearLayout
+        android:id="@+id/textViewlel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/contornofino_bordared"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:text="Atualizar informações"
+            android:textAllCaps="false"
+            android:textSize="19sp"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/listTarefas_But"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:elevation="20dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <Button
+                    android:id="@+id/btnVoltarUpdt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="8dp"
+                    android:elevation="10dp"
+                    android:onClick="voltarUpdateMusc"
+                    android:scrollbarThumbHorizontal="?attr/colorControlActivated"
+                    android:text="voltar"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/btnUpdtMusculo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:elevation="10dp"
+                    android:onClick="updateMusculo"
+                    android:scrollbarThumbHorizontal="?attr/colorControlActivated"
+                    android:text="Altera"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/edtNovaList_DS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textViewUpd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="14dp"
+                    android:text="Musculo"
+                    android:textAllCaps="false"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/edtMusculoUpdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Musculo"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="20dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColorHighlight="?attr/colorPrimary" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/contorno_cinzaescuro"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginBottom="3dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <Spinner
+                            android:id="@+id/spinnerDiaSemanaMuscUpdt"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:drawSelectorOnTop="true"
+                            android:dropDownVerticalOffset="-53dp"
+                            android:gravity="center|center_vertical"
+                            android:inputType="numberDecimal"
+                            android:spinnerMode="dropdown"
+                            android:textAllCaps="false"
+                            android:textSize="10dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView23"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dia da semana"
+                            android:textSize="10sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/contorno_cinzaescuro"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginBottom="3dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <Spinner
+                            android:id="@+id/spinnerPosicaoMuscUdpt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:drawSelectorOnTop="true"
+                            android:dropDownVerticalOffset="-53dp"
+                            android:gravity="center|center_vertical"
+                            android:inputType="numberDecimal"
+                            android:spinnerMode="dropdown"
+                            android:textAllCaps="false"
+                            android:textSize="10dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView231"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView231"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ordem"
+                            android:textSize="10sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtIDMuscUpdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="ID MUSC"
+                android:textAllCaps="false"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtIDUserUpdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="ID MUSC"
+                android:textAllCaps="false"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/txtDiaDaSemnaUpdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="ID POS"
+                android:textAllCaps="false"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtPosicaoUpdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="ID POS"
+                android:textAllCaps="false"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/contornofino_escuro"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddMedidas">
+
+    <Button
+        android:id="@+id/btnSalvarMedida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Add Medidas"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/contornofino_bordared"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnSalvarMedida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintMedida"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:visibility="visible">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/linearOmbros"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toTopOf="@+id/linearBiceps"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/linearBiceps"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toTopOf="@+id/linearAntebraco"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                            <TextView
+                                android:id="@+id/textV8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:paddingLeft="20dp"
+                                android:text="Biceps"
+                                android:textSize="14sp" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/linearL9"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:inputType="number"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/linearL10"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <EditText
+                                        android:id="@+id/edtBicepsDir"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:ems="10"
+                                        android:hint=""
+                                        android:inputType="numberDecimal"
+                                        android:nextFocusDown="@+id/edtBicepsEsq"
+                                        android:paddingLeft="20dp"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="?attr/colorPrimary"
+                                        android:textSize="14sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/textV9"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:text="Direito"
+                                        android:textSize="8sp"
+                                        app:layout_constraintBottom_toTopOf="@+id/edtBicepsDir"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/linearL10"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/linearL9"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <EditText
+                                        android:id="@+id/edtBicepsEsq"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ems="10"
+                                        android:hint=""
+                                        android:inputType="numberDecimal"
+                                        android:nextFocusDown="@+id/edtBicepsDirContr"
+                                        android:paddingLeft="20dp"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="?attr/colorPrimary"
+                                        android:textSize="14sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/textV10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:text="Esquerdo"
+                                        android:textSize="8sp"
+                                        app:layout_constraintBottom_toTopOf="@+id/edtBicepsEsq"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/linearL92"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:inputType="number"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/linearL102"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <EditText
+                                        android:id="@+id/edtBicepsDirContr"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:ems="10"
+                                        android:hint=""
+                                        android:inputType="numberDecimal"
+                                        android:nextFocusDown="@+id/edtBicepsEsqContr"
+                                        android:paddingLeft="20dp"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="?attr/colorPrimary"
+                                        android:textSize="14sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/textV9Contr"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:text="Direito Contraido"
+                                        android:textSize="8sp"
+                                        app:layout_constraintBottom_toTopOf="@+id/edtBicepsDirContr"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/linearL102"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/linearL92"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <EditText
+                                        android:id="@+id/edtBicepsEsqContr"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ems="10"
+                                        android:hint=""
+                                        android:inputType="numberDecimal"
+                                        android:nextFocusDown="@+id/edtAntiBraDir"
+                                        android:paddingLeft="20dp"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="?attr/colorPrimary"
+                                        android:textSize="14sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/textV10Contr"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:text="Esquerdo Contraido"
+                                        android:textSize="8sp"
+                                        app:layout_constraintBottom_toTopOf="@+id/edtBicepsEsqContr"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearAntebraco"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toTopOf="@+id/contrantCinturaBumbun"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                            <TextView
+                                android:id="@+id/textV11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:paddingLeft="20dp"
+                                android:text="Antebraço"
+                                android:textSize="14sp" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/linearL12"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/linearL13"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <EditText
+                                        android:id="@+id/edtAntiBraDir"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:ems="10"
+                                        android:hint=""
+                                        android:inputType="numberDecimal"
+                                        android:nextFocusDown="@+id/edtAntiBraEsq"
+                                        android:order="2"
+                                        android:paddingLeft="20dp"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="?attr/colorPrimary"
+                                        android:textSize="14sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/textV12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:text="Direito"
+                                        android:textSize="8sp"
+                                        app:layout_constraintBottom_toTopOf="@+id/edtAntiBraDir"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/linearL13"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/linearL12"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <EditText
+                                        android:id="@+id/edtAntiBraEsq"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ems="10"
+                                        android:hint=""
+                                        android:inputType="numberDecimal"
+                                        android:nextFocusDown="@+id/edtCintura"
+                                        android:paddingLeft="20dp"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="?attr/colorPrimary"
+                                        android:textSize="14sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/textV13"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:text="Esquerdo"
+                                        android:textSize="8sp"
+                                        app:layout_constraintBottom_toTopOf="@+id/edtAntiBraEsq"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearCoxa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toTopOf="@+id/linearPanturrilha"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteX="8dp">
+
+                            <TextView
+                                android:id="@+id/textV18"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:paddingLeft="20dp"
+                                android:text="Coxa"
+                                android:textSize="14sp" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/linearL19"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/linearL20"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <EditText
+                                        android:id="@+id/edtCoxaDir"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:ems="10"
+                                        android:hint=""
+                                        android:inputType="numberDecimal"
+                                        android:nextFocusDown="@+id/edtCoxaEsq"
+                                        android:paddingLeft="20dp"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="?attr/colorPrimary"
+                                        android:textSize="14sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/textV19"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:text="Direito"
+                                        android:textSize="8sp"
+                                        app:layout_constraintBottom_toTopOf="@+id/edtCoxaDir"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/linearL20"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/linearL19"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <EditText
+                                        android:id="@+id/edtCoxaEsq"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ems="10"
+                                        android:hint=""
+                                        android:inputType="numberDecimal"
+                                        android:nextFocusDown="@+id/edtPantuDir"
+                                        android:paddingLeft="20dp"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="?attr/colorPrimary"
+                                        android:textSize="14sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/textV20"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:text="Esquerdo"
+                                        android:textSize="8sp"
+                                        app:layout_constraintBottom_toTopOf="@+id/edtCoxaEsq"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearPanturrilha"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                            <TextView
+                                android:id="@+id/textV21"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:paddingLeft="20dp"
+                                android:text="Panturrilha"
+                                android:textSize="14sp" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/linearL22"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/linearL23"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <EditText
+                                        android:id="@+id/edtPantuDir"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:ems="10"
+                                        android:hint=""
+                                        android:inputType="numberDecimal"
+                                        android:nextFocusDown="@+id/edtPantuEsq"
+                                        android:paddingLeft="20dp"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="?attr/colorPrimary"
+                                        android:textSize="14sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/textV22"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:text="Direito"
+                                        android:textSize="8sp"
+                                        app:layout_constraintBottom_toTopOf="@+id/edtPantuDir"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/linearL23"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/linearL22"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <EditText
+                                        android:id="@+id/edtPantuEsq"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ems="10"
+                                        android:hint=""
+                                        android:inputType="numberDecimal"
+                                        android:nextFocusDown="@+id/edtDataVenc_Div"
+                                        android:paddingLeft="20dp"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="?attr/colorPrimary"
+                                        android:textSize="14sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/textV23"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:text="Esquerdo"
+                                        android:textSize="8sp"
+                                        app:layout_constraintBottom_toTopOf="@+id/edtPantuEsq"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/linearLayout7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="UnknownId">
+
+
+                            <ImageButton
+                                android:id="@+id/btnUpdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="16dp"
+                                android:layout_weight="1"
+                                android:visibility="gone"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@android:drawable/ic_menu_edit"
+                                tools:ignore="MissingConstraints" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/contrantNomeData"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toTopOf="@+id/contrantPesoAltura"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <EditText
+                                android:id="@+id/edtId"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:text=""
+                                tools:ignore="MissingConstraints" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/linearL1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/linearL2"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <EditText
+                                    android:id="@+id/edtNomeUser"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:ems="10"
+                                    android:hint=""
+                                    android:inputType="textCapSentences"
+                                    android:nextFocusDown="@+id/edtDataListRGMed"
+                                    android:paddingLeft="20dp"
+                                    android:selectAllOnFocus="true"
+                                    android:singleLine="true"
+                                    android:textColorHighlight="?attr/colorPrimary"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/textV1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:text="Seu Nome"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toTopOf="@+id/edtNomeUser"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/linearL2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/linearL1"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <EditText
+                                    android:id="@+id/edtDataListRGMed"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:hint=""
+                                    android:inputType="date"
+                                    android:nextFocusDown="@+id/edtPeso"
+                                    android:paddingLeft="20dp"
+                                    android:selectAllOnFocus="true"
+                                    android:singleLine="true"
+                                    android:textColorHighlight="?attr/colorPrimary"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/textV2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:text="Data"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toTopOf="@+id/edtDataListRGMed"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/contrantPesoAltura"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toTopOf="@+id/contrantPeito"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/linearL3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                android:orientation="vertical"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/linearL4"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <EditText
+                                    android:id="@+id/edtPeso"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:ems="10"
+                                    android:hint=""
+                                    android:inputType="numberDecimal"
+                                    android:nextFocusDown="@+id/edtAltura"
+                                    android:paddingLeft="20dp"
+                                    android:selectAllOnFocus="true"
+                                    android:singleLine="true"
+                                    android:textColorHighlight="?attr/colorPrimary"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/textV3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:text="Peso"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toTopOf="@+id/edtPeso"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/linearL4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/linearL3"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <EditText
+                                    android:id="@+id/edtAltura"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:hint=""
+                                    android:inputType="numberDecimal"
+                                    android:nextFocusDown="@+id/edtOmbros"
+                                    android:paddingLeft="20dp"
+                                    android:selectAllOnFocus="true"
+                                    android:singleLine="true"
+                                    android:textColorHighlight="?attr/colorPrimary"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/textV4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:text="Altura"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toTopOf="@+id/edtAltura"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/contrantPeito"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toTopOf="@+id/linearOmbros"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/linearL15"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:orientation="vertical"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/linearL7"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <EditText
+                                    android:id="@+id/edtOmbros"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:ems="10"
+                                    android:hint=""
+                                    android:inputType="numberDecimal"
+                                    android:nextFocusDown="@+id/edtPeito"
+                                    android:paddingLeft="20dp"
+                                    android:selectAllOnFocus="true"
+                                    android:singleLine="true"
+                                    android:textColorHighlight="?attr/colorPrimary"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/textV16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:text="Ombros"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toTopOf="@+id/edtOmbros"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/linearL7"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:orientation="vertical"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/linearL15"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <EditText
+                                    android:id="@+id/edtPeito"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:ems="10"
+                                    android:hint=""
+                                    android:inputType="numberDecimal"
+                                    android:nextFocusDown="@+id/edtBicepsDir"
+                                    android:paddingLeft="20dp"
+                                    android:selectAllOnFocus="true"
+                                    android:singleLine="true"
+                                    android:textColorHighlight="?attr/colorPrimary"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/textV7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:text="Peito"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toTopOf="@+id/edtPeito"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/contrantCinturaBumbun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toTopOf="@+id/linearCoxa"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteX="8dp"
+                            tools:layout_editor_absoluteY="215dp">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/linearL5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                android:orientation="vertical"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/linearL6"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <EditText
+                                    android:id="@+id/edtCintura"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:ems="10"
+                                    android:hint=""
+                                    android:inputType="numberDecimal"
+                                    android:nextFocusDown="@+id/edtBumbum"
+                                    android:paddingLeft="20dp"
+                                    android:selectAllOnFocus="true"
+                                    android:singleLine="true"
+                                    android:textColorHighlight="?attr/colorPrimary"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/textV5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:text="Barriga"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toTopOf="@+id/edtCintura"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/linearL6"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/linearL5"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <EditText
+                                    android:id="@+id/edtBumbum"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:hint=""
+                                    android:inputType="numberDecimal"
+                                    android:nextFocusDown="@+id/edtCoxaDir"
+                                    android:paddingLeft="20dp"
+                                    android:selectAllOnFocus="true"
+                                    android:singleLine="true"
+                                    android:textColorHighlight="?attr/colorPrimary"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/textV6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bumbum"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toTopOf="@+id/edtBumbum"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="img"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Adicioanar Medidas"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idAdViewAddMed" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/idAdViewAddMed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        app:adSize="BANNER"
+        app:adUnitId="@string/banner_id_add_medidas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></com.google.android.gms.ads.AdView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

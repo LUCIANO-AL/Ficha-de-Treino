@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lalp.sist.controle_de_medidas">
+
+    <application
+        android:allowBackup="true"
+        android:exported="true"
+        android:requestLegacyExternalStorage="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.Controle_De_Medidas">
+        <activity
+            android:name=".MenuDeTelas"
+            android:exported="false"
+            android:theme="@style/Theme.Controle_De_Medidas.NoActionBar" />
+        <activity
+            android:name=".Splash"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Controle_De_Medidas.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Treinos"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/title_activity_treinos"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Controle_De_Medidas.NoActionBar" />
+        <activity
+            android:name=".ComparativoMedidas"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/title_activity_comparativo_medidas"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Controle_De_Medidas.NoActionBar" />
+        <activity
+            android:name=".ListaDeMedidas"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/title_activity_lista_de_medidas"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Controle_De_Medidas.NoActionBar" />
+        <activity
+            android:name=".AddMedidas"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Controle_De_Medidas.NoActionBar" />
+        <activity
+            android:name=".ListaDeUsuarios"
+            android:exported="false"
+            android:label="@string/title_activity_lista_de_usuarios"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Controle_De_Medidas.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id_admob" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

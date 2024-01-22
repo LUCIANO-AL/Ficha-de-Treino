@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/drawable-v24/efeitodeclick2.xml" value="0.1765" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1275" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/drawable/botao.xml" value="0.1765" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/drawable/botao_normal.xml" value="0.1765" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/drawable/botao_selecionado.xml" value="0.1765" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/drawable/circulo_1.xml" value="0.18" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/drawable/circulo_2.xml" value="0.1865" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/drawable/contornofino.xml" value="0.1035" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/drawable/contornofino_cinzaclaro.xml" value="0.194" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/drawable/contornofinolistmusc.xml" value="0.1235" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/drawable/contornofinosplash.xml" value="0.1235" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/drawable/efeitodeclick.xml" value="0.1335" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/act_add_medidas.xml" value="0.1" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/act_comparativo_medidas.xml" value="0.12072368421052632" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/act_lista_de_medidas.xml" value="0.10555555555555556" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/act_menu_de_telas.xml" value="0.1" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/act_registra_medida.xml" value="0.1" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/act_rgmedidas.xml" value="0.33" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/act_splash.xml" value="0.1569046601111586" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/act_tela_exercicios.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/act_tela_principal.xml" value="0.22" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/act_temporizador.xml" value="0.1" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/act_treinos.xml" value="0.1" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/act_update_exercicio.xml" value="0.1" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/content_add_medidas.xml" value="0.33" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/content_comparativo_medidas.xml" value="0.25" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/content_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/content_lista_de_medidas.xml" value="0.1569046601111586" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/content_registra_medida.xml" value="0.1" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/content_splash.xml" value="0.25" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/content_tela_exercicios.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/content_tela_principal.xml" value="0.2" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/content_temp_editar.xml" value="0.1" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/content_temp_execucao.xml" value="0.1" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/content_temporizador.xml" value="0.9" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/content_treinos.xml" value="0.33" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/content_update_exercicio.xml" value="0.33" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/content_updateexerc.xml" value="0.15" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/fragment_temporizador_edite.xml" value="0.22" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/fragment_temporizador_exec.xml" value="0.33" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/fragment_treino.xml" value="0.18" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/fragment_update_exercicio.xml" value="0.33" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/linha_comparacao_medidas.xml" value="0.1" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/linha_exercicio.xml" value="0.33" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/linha_exercicio2.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/linha_medida.xml" value="0.33" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/linha_musculo.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/linha_rg_med.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/linha_treino.xml" value="0.22" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/linhas_comparativas.xml" value="0.22" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/medidas_update.xml" value="0.10555555555555556" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/nav_header.xml" value="0.25" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/sublinha_treino.xml" value="0.5" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/tela_listagem_medidas.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/tela_registro_de_imagens.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/tela_registro_medidas.xml" value="0.25" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/tela_rg_img.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/tela_rg_medidas.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/tela_temporizador.xml" value="0.1" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/teste.xml" value="0.1" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/update_exercicio.xml" value="0.33" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/layout/update_medidas.xml" value="0.25" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/menu/nav_menu.xml" value="0.33" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/Luciano &amp; Paty/AndroidStudioProjects/Controle_De_Medidas/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1275" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

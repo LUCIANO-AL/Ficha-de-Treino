@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">List&amp;Treine</string>
+    <string name="text_action_ok_conexao">OK</string>
+    <string name="title_aviso">Aviso</string>
+    <string name="lista_message_validacampo_nomeexercicio">Por favor informe o nome do Exercício</string>
+    <string name="lista_message_validacampo_nomeserie">Por favor informe a quantidade de Series</string>
+    <string name="lista_message_validacampo_nomerepeticao">Por favor informe a quantidade de Repetições</string>
+    <string name="lista_message_validacampo_nomecarga">Por favor informe por favor informe o valor Carga</string>
+    <string name="lista_message_validacampo_nomemusculo">Por favor informe o nome do Musculo alvo do treino.</string>
+    <string name="lista_message_validacampo">Por favor informe o nome</string>
+    <string name="lbl_validacao_ok">OK</string>
+    <string name="title_action_excluir_tudo">Excluir todos os registros de medidas</string>
+    <string name="title_listas_del">Deletando Registros de Medidas</string>
+    <string name="message_listas_dell">Deletar seu(s) registros(s) de medida(s)?</string>
+
+
+    <string name="title_adapterlistas_dellista">Confirmação</string>
+    <string name="msg_adapterlistas_dellista">Excluir estes registros de medidas?</string>
+    <string name="msg_adapterlistas_dellista_exercicio">Excluir este exercício?</string>
+    <string name="txt_adapterlistas_dellista">Excluir</string>
+    <string name="action_adapterlistas_dellista">Excluida!</string>
+    <string name="txtcancel_adapterlistas_dellista">Cancelar</string>
+    <string name="title_activity_teste">Teste</string>
+
+    <string name="title_desmarcartodos">Desmarcar</string>
+    <string name="msg_desmarcartodos">Desmarcar todos os cheks das series concluídas?</string>
+
+    <string name="desmarcao_concluida">Todas as series foram desmacardas!</string>
+
+
+    <string name="msg_adapterlistas_stoptempo">Parar o temporizador?</string>
+
+    <string name="title_activity_registra_medida">RegistraMedida</string>
+    <string name="title_activity_lista_de_medidas">ListaDeMedidas</string>
+    <string name="title_activity_comparativo_medidas">ComparativoMedidas</string>
+    <string name="title_activity_treinos">Treinos</string>
+    <string name="title_activity_tela_exercicios">TelaExercicios</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_temporizador">Temporizador</string>
+
+    <string name="open_nav">Abrir Gaveta de Navegação</string>
+    <string name="close_nav">Fecha Gaveta de Navegação</string>
+
+    <string name="msg_arquivo_não_existe">Arquivo não foi baixado no aplicativo WhatSapp, por favor acessar a conversa do contato que compartilhou a lista com você, ou não existe o arquivo para importação.</string>
+
+    <!--Teste
+    <string name="banner_id_treino">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_id_treino_update">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_id_treino_temporizador_edit">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_id_treino_temporizador_exec">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_id_comparativo_med">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_id_add_medidas">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_id_listademedidas">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_id_update_medidas">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_id_add_medidas">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_updates_medidas">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="intersticial_desmarcartodos">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="intersticial_temporizador">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="intersticial_temporizador2">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="intersticial_temporizador3">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="intersticial_temporizador4">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="intersticial_temporizador5">ca-app-pub-3940256099942544/1033173712</string>-->
+
+    <!--Produção-->
+    <string name="banner_id_treino">ca-app-pub-9264013911597861/5295096651</string>
+    <string name="banner_id_treino_update">ca-app-pub-9264013911597861/9042769975</string>
+    <string name="banner_id_treino_temporizador_edit">ca-app-pub-9264013911597861/2940396051</string>
+    <string name="banner_id_treino_temporizador_exec">ca-app-pub-9264013911597861/7154973239</string>
+    <string name="banner_id_comparativo_med">ca-app-pub-9264013911597861/9010980387</string>
+    <string name="banner_id_add_medidas">ca-app-pub-9264013911597861/6304925992</string>
+    <string name="banner_id_listademedidas">ca-app-pub-9264013911597861/4326178658</string>
+    <string name="banner_id_update_medidas">ca-app-pub-9264013911597861/9386933647</string>
+    <string name="interstitial_id_add_medidas">ca-app-pub-9264013911597861/4880163682</string>
+    <string name="interstitial_updates_medidas">ca-app-pub-9264013911597861/6847581977</string>
+    <string name="intersticial_desmarcartodos">ca-app-pub-9264013911597861/8970834353</string>
+    <string name="intersticial_temporizador">ca-app-pub-9264013911597861/3820483403</string>
+    <string name="intersticial_temporizador2">ca-app-pub-9264013911597861/1312216705</string>
+    <string name="intersticial_temporizador3">ca-app-pub-9264013911597861/1945220645</string>
+    <string name="intersticial_temporizador4">ca-app-pub-9264013911597861/7146959321</string>
+    <string name="intersticial_temporizador5">ca-app-pub-9264013911597861/4520795985</string>
+
+    <string name="app_id_admob">"ca-app-pub-9264013911597861~6560847372"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_update_exercicio">UpdateExercicio</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_exluir_musc">Excluir</string>
+    <string name="msg_excluir_musc">Excluir musculo?</string>
+    <string name="alert_btn_sim">Sim</string>
+    <string name="alert_btn_não">Não</string>
+    <string name="alerta_excl_concluida">Musculo Excluido</string>
+    <string name="msg_adapterlistas_dellista_musculo">Excluir Musculo</string>
+    <string name="title_activity_lista_de_usuarios">ListaDeUsuarios</string>
+    <string name="msg_adapterlistas_del_user">Excluir este usuário?</string>
+
+</resources>
